@@ -1,0 +1,17 @@
+@import url("http://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "./auxi/reset.scss", "./auxi/variables.scss", "./auxi/components.scss";
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: auto;
+
+  font-size: 1.6rem;
+  background-color: var(--black);
+}

@@ -1,0 +1,17 @@
+.container {
+  max-width: 172rem;
+  width: 100%;
+  margin: 0 auto;
+
+  @include ltBigDesktop {
+    padding: 0 3rem;
+  }
+
+  @include ltTablet {
+    padding: 0 5rem;
+  }
+
+  @include ltPhone {
+    padding: 0 1.5rem;
+  }
+}
