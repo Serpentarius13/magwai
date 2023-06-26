@@ -30,4 +30,10 @@ import FeedbackButton from "@/components/features/FeedbackButton.vue";
     stroke: white !important;
   }
 }
+
+.right-btn {
+  @include ltTablet {
+    width: 20.1rem;
+  }
+}
 </style>

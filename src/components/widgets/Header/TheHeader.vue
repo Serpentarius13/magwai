@@ -50,7 +50,9 @@ import FeedbackButton from "@/components/features/FeedbackButton.vue";
   }
 
   &__btn {
-    width: 28.25rem;
+    @include ltPhone {
+      width: 21.9rem;
+    }
   }
 }
 </style>

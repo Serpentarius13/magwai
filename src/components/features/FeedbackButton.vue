@@ -1,5 +1,5 @@
 <template>
-  <BaseButton :has-right-block="true" class="right-btn" @click="openFormPopup">
+  <BaseButton :has-right-block="true" class="feedback-btn" @click="openFormPopup">
     Оставить заявку
   </BaseButton>
 </template>
@@ -18,9 +18,9 @@ function openFormPopup() {
 </script>
 
 <style scoped lang="scss">
-.right-btn {
+.feedback-btn {
   text-transform: uppercase;
   font-weight: bold;
-  width: 20.1rem;
+  width: 28.2rem;
 }
 </style>
