@@ -3,28 +3,19 @@
     <PhoneIcon class="phone" />
   </BaseButton>
 
-  <div class="right-btn">
-    <BaseButton :has-right-block="true"> Оставить заявку </BaseButton>
-  </div>
+  <FeedbackButton />
 </template>
 
 <script setup lang="ts">
-import BaseButton from "@/components/shared/Button/BaseButton.vue";
-import { ButtonThemes } from "@/components/shared/Button/buttonVariants";
+import BaseButton from "@/components/shared/ui/Button/BaseButton.vue";
+
+import { ButtonThemes } from "@/components/shared/ui/Button/buttonVariants";
 
 import PhoneIcon from "@/app/assets/icons/phone.svg";
+import FeedbackButton from "@/components/features/FeedbackButton.vue";
 </script>
 
 <style lang="scss">
-.right-btn {
-  display: flex;
-
-  button {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-}
-
 .left-btn {
   svg {
     path {

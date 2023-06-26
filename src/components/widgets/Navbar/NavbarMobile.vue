@@ -10,7 +10,7 @@
   <Teleport to="body">
     <Transition name="menu">
       <div class="mobile-menu" v-if="isMobileMenuOpened">
-        <div class="mobile-menu__links">
+        <div class="mobile-menu__links heading-small">
           <NavbarLinks />
         </div>
 
@@ -101,6 +101,10 @@ watch(isMobileMenuOpened, () => {
   background-color: var(--black);
   padding: 5.9rem 4.9rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__links {
     display: flex;
     flex-direction: column;
@@ -110,7 +114,6 @@ watch(isMobileMenuOpened, () => {
       $dark: var(--gray);
       $light: white;
 
-      font-size: 3.6rem;
       font-weight: bold;
 
       transition: 0.25s ease all;
@@ -135,8 +138,6 @@ watch(isMobileMenuOpened, () => {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-
-      padding-top: 5.1rem;
 
       :deep(button) {
         width: 95%;

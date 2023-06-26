@@ -5,7 +5,7 @@
 
       <BaseLogo />
 
-      <nav class="navbar__links">
+      <nav class="navbar__links text-small">
         <NavbarLinks />
       </nav>
     </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseLogo from "@/components/shared/Logo/BaseLogo.vue";
+import BaseLogo from "@/components/shared/ui/Logo/BaseLogo.vue";
 import NavbarButtons from "./NavbarButtons.vue";
 import NavbarLinks from "./NavbarLinks.vue";
 import NavbarMobile from "./NavbarMobile.vue";
@@ -51,7 +51,7 @@ import NavbarMobile from "./NavbarMobile.vue";
     gap: 4.2rem;
     color: white;
     text-transform: uppercase;
-    font-size: 1.4rem;
+
     line-height: 150%;
 
     :deep(a) {
